@@ -15,7 +15,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
        id <- as.integer(id)
        pollutant <- as.character(pollutant)
        directory <- as.character(directory)
-       setwd(paste("/Users/harakazushi/Desktop/",directory, sep= ""))
+       setwd(paste("./", directory, sep= ""))
        x <-c()
        for (i in id) {
           	 if (i < 10){
