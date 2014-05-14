@@ -14,7 +14,7 @@ complete <- function(directory, id = 1:332) {
         ## number of complete cases
        id <- as.integer(id)
        directory <- as.character(directory)
-       setwd(paste("/Users/harakazushi/Desktop/",directory, sep= ""))
+       setwd(paste("./",directory, sep= ""))
        j <- 0
        comp.data <- data.frame(id= rep(NA,length(id)) ,nobs = rep(NA,length(id)))
        for (i in id) {
